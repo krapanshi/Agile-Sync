@@ -1,0 +1,21 @@
+{
+  "name": "@agile-sync/server",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch --env-file-if-exists=.env src/index.js",
+    "start": "node --env-file-if-exists=.env src/index.js",
+    "test": "node --test test/*.test.js",
+    "db:check": "node --env-file-if-exists=.env scripts/database.js check",
+    "db:indexes": "node --env-file-if-exists=.env scripts/database.js indexes",
+    "test:integration": "node --env-file-if-exists=.env --test test/mongodb.integration.test.js",
+    "test:load": "node --test test/load.test.js",
+    "load:live": "node --env-file-if-exists=.env scripts/run-load.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^9.11.1",
+    "socket.io": "^4.8.4",
+    "socket.io-client": "^4.8.4"
+  }
+}

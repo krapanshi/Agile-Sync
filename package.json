@@ -1,0 +1,14 @@
+{
+  "name": "agile-sync",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev:client": "npm run dev --workspace client",
+    "dev:server": "npm run dev --workspace server",
+    "build": "npm run build --workspace client",
+    "test": "npm run test --workspaces --if-present"
+  }
+}

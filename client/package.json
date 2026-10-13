@@ -1,0 +1,19 @@
+{
+  "name": "@agile-sync/client",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --configLoader native",
+    "build": "vite build --configLoader native",
+    "preview": "vite preview --configLoader native",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "socket.io-client": "^4.8.4"
+  },
+  "devDependencies": {
+    "vite": "^7.0.0"
+  }
+}
